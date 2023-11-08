@@ -1,0 +1,109 @@
+Scope.geometry: 1146x956+1956+218
+Scope.title: "Allyson_Octahedron_Mach_Probe Raw Signals" // $shot
+Scope.icon_name: "Magnetic"
+Scope.title_event: 
+Scope.print_file: sys$login:dwscope.ps
+Scope.print_event: 
+Scope.print_portrait: 0
+Scope.print_window_title: 0
+Scope.printer: TermRoom4200
+Scope.font: -Adobe-New Century Schoolbook-Medium-R-Normal--12-120-75-75-P-70-ISO8859-1
+Scope.columns: 4
+Scope.global_1_1.x.grid_lines: 9
+Scope.global_1_1.experiment: mst
+Scope.global_1_1.shot: current_shot('mst')
+Scope.global_1_1.y: _spts=21
+Scope.global_1_1.xmin: -20
+Scope.global_1_1.xmax: 90
+Scope.global_1_1.ymin: -4
+Scope.global_1_1.ymax: 4
+Scope.global_1_1.global_defaults: -195041
+Scope.rows_in_column_1: 3
+
+Scope.plot_1_1.height: 283
+Scope.plot_1_1.experiment: mst
+Scope.plot_1_1.x: dim_of(\mraw_misc::probe3_01)*1000
+Scope.plot_1_1.y: _d=smooth1d(data(\mraw_misc::probe3_01),50),_d - mean(_d[0:100])
+Scope.plot_1_1.title: 'Tip 01 (volts) '//$shot
+Scope.plot_1_1.label: Theta
+Scope.plot_1_1.global_defaults: -117961
+
+Scope.plot_2_1.height: 298
+Scope.plot_2_1.experiment: mst
+Scope.plot_2_1.x: dim_of(\mraw_misc::probe3_03)*1000
+Scope.plot_2_1.y: _d=smooth1d(data(\mraw_misc::probe3_03),50),_d - mean(_d[0:100])
+Scope.plot_2_1.title: 'Tip 03 (volts)'//$shot
+Scope.plot_2_1.label: Theta
+Scope.plot_2_1.global_defaults: -117897
+
+Scope.plot_3_1.height: 311
+Scope.plot_3_1.experiment: mst
+Scope.plot_3_1.x: dim_of(\mraw_misc::probe3_05)*1000
+Scope.plot_3_1.y: _d=smooth1d(data(\mraw_misc::probe3_05),50),_d - mean(_d[0:100])
+Scope.plot_3_1.title: 'Tip 05 (volts)'//$shot
+Scope.plot_3_1.label: Theta
+Scope.plot_3_1.global_defaults: -117897
+Scope.rows_in_column_2: 3
+
+Scope.plot_1_2.height: 283
+Scope.plot_1_2.experiment: mst
+Scope.plot_1_2.x: dim_of(\mraw_misc::probe3_02)*1000
+Scope.plot_1_2.y: _d=smooth1d(data(\mraw_misc::probe3_02),50),_d - mean(_d[0:100])
+Scope.plot_1_2.title: 'Tip 02 (volts)'//$shot
+Scope.plot_1_2.label: Theta
+Scope.plot_1_2.global_defaults: -117897
+
+Scope.plot_2_2.height: 298
+Scope.plot_2_2.experiment: mst
+Scope.plot_2_2.x: dim_of(\mraw_misc::probe3_04)*1000
+Scope.plot_2_2.y: _d=smooth1d(data(\mraw_misc::probe3_04),50),_d - mean(_d[0:100])
+Scope.plot_2_2.title: 'Tip 04 (volts)'//$shot
+Scope.plot_2_2.label: Theta
+Scope.plot_2_2.global_defaults: -117897
+
+Scope.plot_3_2.height: 311
+Scope.plot_3_2.experiment: mst
+Scope.plot_3_2.x: dim_of(\mraw_misc::probe3_06)*1000
+Scope.plot_3_2.y: _d=smooth1d(data(\mraw_misc::probe3_06),50),_d - mean(_d[0:100])
+Scope.plot_3_2.title: 'Tip 6 (volts)'//$shot
+Scope.plot_3_2.label: Theta
+Scope.plot_3_2.global_defaults: -117897
+Scope.rows_in_column_3: 3
+
+Scope.plot_1_3.height: 283
+Scope.plot_1_3.y.grid_lines: 10
+Scope.plot_1_3.experiment: mst
+Scope.plot_1_3.x: dim_of(\mraw_misc::probe3_08)*1000
+Scope.plot_1_3.y: _d=-smooth1d(data(\mraw_misc::probe3_08),50),_d - mean(_d[0:100] )
+Scope.plot_1_3.title: 'B1'//$shot
+Scope.plot_1_3.label: Theta
+Scope.plot_1_3.global_defaults: -117961
+
+Scope.plot_2_3.height: 298
+Scope.plot_2_3.experiment: mst
+Scope.plot_2_3.x: dim_of(\mraw_misc::probe3_09)*1000
+Scope.plot_2_3.y: -smooth1d(\mraw_misc::probe3_09,50)
+Scope.plot_2_3.xmax: 90
+Scope.plot_2_3.title: 'B2'//$shot
+Scope.plot_2_3.label: Theta
+Scope.plot_2_3.global_defaults: -126089
+
+Scope.plot_3_3.height: 311
+Scope.plot_3_3.experiment: mst
+Scope.plot_3_3.x: dim_of(\mraw_misc::probe3_10)*1000
+Scope.plot_3_3.y: smooth1d(\mraw_misc::probe3_10,50)
+Scope.plot_3_3.title: 'BR'//$shot
+Scope.plot_3_3.label: Theta
+Scope.plot_3_3.global_defaults: -117897
+Scope.rows_in_column_4: 1
+
+Scope.plot_1_4.height: 896
+Scope.plot_1_4.experiment: mst
+Scope.plot_1_4.x: dim_of(\mraw_misc::probe3_07)*1000
+Scope.plot_1_4.y: _d=smooth1d(data(\mraw_misc::probe3_07),50),_d - mean(_d[0:100])
+Scope.plot_1_4.title: 'Ret Tip (Sum of All Tips)'//$shot
+Scope.plot_1_4.label: Theta
+Scope.plot_1_4.global_defaults: -117897
+Scope.vpane_1: 250
+Scope.vpane_2: 500
+Scope.vpane_3: 750

@@ -1,0 +1,55 @@
+Scope.geometry: 1406x752+309+283
+Scope.title: "WHISTLER PROBES AA" // $shot
+Scope.icon_name: "WHISTLER"
+Scope.title_event: 
+Scope.print_file: sys$login:dwscope.ps
+Scope.print_event: 
+Scope.print_portrait: 0
+Scope.print_window_title: 0
+Scope.printer: To file
+Scope.font: -Adobe-New Century Schoolbook-Medium-R-Normal--12-120-75-75-P-70-ISO8859-1
+Scope.columns: 1
+Scope.global_1_1.x.grid_lines: 9
+Scope.global_1_1.y.grid_lines: 8
+Scope.global_1_1.shot: current_shot('mst')
+Scope.global_1_1.xmin: -10
+Scope.global_1_1.xmax: 70
+Scope.global_1_1.event: ej_done
+Scope.global_1_1.global_defaults: -143713
+Scope.rows_in_column_1: 3
+
+Scope.plot_1_1.height: 229
+Scope.plot_1_1.x.grid_lines: 7
+Scope.plot_1_1.experiment: whistler_ext
+Scope.plot_1_1.x: dim_of(\whistler_01)+20
+Scope.plot_1_1.y: _d=data(\whistler_01), _d*60/.7
+Scope.plot_1_1.xmin: 21
+Scope.plot_1_1.xmax: 51
+Scope.plot_1_1.ymin: -200.0
+Scope.plot_1_1.ymax: 200.0
+Scope.plot_1_1.title: 'HXR_RV'//$shot
+Scope.plot_1_1.global_defaults: -654569
+
+Scope.plot_2_1.height: 229
+Scope.plot_2_1.x.grid_lines: 7
+Scope.plot_2_1.experiment: whistler_ext
+Scope.plot_2_1.x: dim_of(\whistler_02)+20
+Scope.plot_2_1.y: _d=data(\whistler_02), _d*60/.7
+Scope.plot_2_1.xmin: 21
+Scope.plot_2_1.xmax: 51
+Scope.plot_2_1.ymin: -200.0
+Scope.plot_2_1.ymax: 200.0
+Scope.plot_2_1.title: 'HXR_TV'//$shot
+Scope.plot_2_1.global_defaults: -654569
+
+Scope.plot_3_1.height: 230
+Scope.plot_3_1.x.grid_lines: 7
+Scope.plot_3_1.experiment: whistler_ext
+Scope.plot_3_1.x: dim_of(\whistler_03)+20
+Scope.plot_3_1.y: _d=data(\whistler_03), _d
+Scope.plot_3_1.xmin: 21
+Scope.plot_3_1.xmax: 51
+Scope.plot_3_1.ymin: -2.0
+Scope.plot_3_1.ymax: 2.0
+Scope.plot_3_1.title: 'SXR'//$shot
+Scope.plot_3_1.global_defaults: -654569
