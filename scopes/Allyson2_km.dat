@@ -1,0 +1,148 @@
+Scope.geometry: 1393x853+1+44
+Scope.title: "Probe5 Raw Signals" // $shot
+Scope.icon_name: "Magnetic"
+Scope.title_event: 
+Scope.print_file: sys$login:dwscope.ps
+Scope.print_event: 
+Scope.print_portrait: 0
+Scope.print_window_title: 0
+Scope.printer: TermRoom4200
+Scope.font: -Adobe-New Century Schoolbook-Medium-R-Normal--12-120-75-75-P-70-ISO8859-1
+Scope.columns: 4
+Scope.global_1_1.x.grid_lines: 10
+Scope.global_1_1.y.grid_lines: 6
+Scope.global_1_1.experiment: mst
+Scope.global_1_1.shot: current_shot('mst')
+Scope.global_1_1.y: _spts=21
+Scope.global_1_1.xmin: -15
+Scope.global_1_1.xmax: 120
+Scope.global_1_1.global_defaults: -195057
+Scope.rows_in_column_1: 3
+
+Scope.plot_1_1.height: 287
+Scope.plot_1_1.x.grid_lines: 8
+Scope.plot_1_1.experiment: mst
+Scope.plot_1_1.x: dim_of(\mraw_misc::probe5_01)*1000
+Scope.plot_1_1.y: _d=smooth1d(data(\mraw_misc::probe5_01),1),_d - mean(_d[0:500])
+Scope.plot_1_1.xmin: -20
+Scope.plot_1_1.xmax: 80
+Scope.plot_1_1.title: 'Channel 01'//$shot
+Scope.plot_1_1.global_defaults: -654569
+
+Scope.plot_2_1.height: 292
+Scope.plot_2_1.x.grid_lines: 8
+Scope.plot_2_1.experiment: mst
+Scope.plot_2_1.x: dim_of(\mraw_misc::probe5_05)*1000
+Scope.plot_2_1.y: _d = smooth1d(data(\mraw_misc::probe5_05),1) , _d - mean(_d[1:10])
+Scope.plot_2_1.xmin: -20
+Scope.plot_2_1.xmax: 80
+Scope.plot_2_1.title: 'Channel 05'//$shot
+Scope.plot_2_1.global_defaults: -654569
+
+Scope.plot_3_1.height: 210
+Scope.plot_3_1.experiment: mst
+Scope.plot_3_1.x: dim_of(\mst_ops::ip)*1000
+Scope.plot_3_1.y: _ip=\mst_ops::ip
+Scope.plot_3_1.xmin: -20
+Scope.plot_3_1.xmax: 80
+Scope.plot_3_1.title: 'Plasma Current (kA)' //$shot//'max(='//maxval(_ip)//'kAmp'
+Scope.plot_3_1.global_defaults: -605313
+Scope.rows_in_column_2: 3
+
+Scope.plot_1_2.height: 287
+Scope.plot_1_2.x.grid_lines: 8
+Scope.plot_1_2.experiment: mst
+Scope.plot_1_2.x: dim_of(\mraw_misc::probe5_02)*1000
+Scope.plot_1_2.y: _d=smooth1d(data(\mraw_misc::probe5_02),1),_d - mean(_d[0:100])
+Scope.plot_1_2.xmin: -20
+Scope.plot_1_2.xmax: 80
+Scope.plot_1_2.title: 'Channel 02'//$shot
+Scope.plot_1_2.label: Theta
+Scope.plot_1_2.global_defaults: -130217
+
+Scope.plot_2_2.height: 292
+Scope.plot_2_2.x.grid_lines: 8
+Scope.plot_2_2.experiment: mst
+Scope.plot_2_2.x: dim_of(\mraw_misc::probe5_06)*1000
+Scope.plot_2_2.y: -smooth1d(\mraw_misc::probe5_06,1)
+Scope.plot_2_2.xmin: -20
+Scope.plot_2_2.xmax: 80
+Scope.plot_2_2.title: 'Channel 06'//$shot
+Scope.plot_2_2.global_defaults: -654569
+
+Scope.plot_3_2.height: 210
+Scope.plot_3_2.experiment: mst
+Scope.plot_3_2.x: dim_of(\mst_ops::btw)*1000
+Scope.plot_3_2.y: _btw=\mst_ops::btw
+Scope.plot_3_2.xmin: -20
+Scope.plot_3_2.xmax: 80
+Scope.plot_3_2.title: 'BTW (G)' //$shot
+Scope.plot_3_2.global_defaults: -605313
+Scope.rows_in_column_3: 3
+
+Scope.plot_1_3.height: 287
+Scope.plot_1_3.x.grid_lines: 8
+Scope.plot_1_3.experiment: mst
+Scope.plot_1_3.x: dim_of(\mraw_misc::probe5_03)*1000
+Scope.plot_1_3.y: _d=smooth1d(data(\mraw_misc::probe5_03),1),_d - mean(_d[0:100] )
+Scope.plot_1_3.xmin: -20
+Scope.plot_1_3.xmax: 80
+Scope.plot_1_3.title: 'Channel 03'//$shot
+Scope.plot_1_3.label: Theta
+Scope.plot_1_3.global_defaults: -130281
+
+Scope.plot_2_3.height: 292
+Scope.plot_2_3.x.grid_lines: 8
+Scope.plot_2_3.y.grid_lines: 6
+Scope.plot_2_3.experiment: mst
+Scope.plot_2_3.x: dim_of(\mraw_misc::probe5_07)*1000
+Scope.plot_2_3.y: smooth1d(\mraw_misc::probe5_07,1)
+Scope.plot_2_3.xmin: -20
+Scope.plot_2_3.xmax: 80
+Scope.plot_2_3.title: 'Channel 07'//$shot
+Scope.plot_2_3.label: Theta
+Scope.plot_2_3.global_defaults: -130281
+
+Scope.plot_3_3.height: 210
+Scope.plot_3_3.experiment: mst
+Scope.plot_3_3.x: dim_of(\mst_ops::btave)*1000
+Scope.plot_3_3.y: _d=\mst_ops::btave
+Scope.plot_3_3.xmin: -20
+Scope.plot_3_3.xmax: 80
+Scope.plot_3_3.title: 'Average Foroidal Field (G)' //$shot
+Scope.plot_3_3.global_defaults: -605313
+Scope.rows_in_column_4: 3
+
+Scope.plot_1_4.height: 287
+Scope.plot_1_4.x.grid_lines: 8
+Scope.plot_1_4.experiment: mst
+Scope.plot_1_4.x: dim_of(\mraw_misc::probe5_04)*1000
+Scope.plot_1_4.y: _d=smooth1d(data(\mraw_misc::probe5_04),1), _d - mean( _d[0:100])
+Scope.plot_1_4.xmin: -20
+Scope.plot_1_4.xmax: 80
+Scope.plot_1_4.title: 'Channel 04'//$shot
+Scope.plot_1_4.label: Theta
+Scope.plot_1_4.global_defaults: -130281
+
+Scope.plot_2_4.height: 292
+Scope.plot_2_4.x.grid_lines: 8
+Scope.plot_2_4.experiment: mst
+Scope.plot_2_4.x: dim_of(\mraw_misc::probe5_08)*1000
+Scope.plot_2_4.y: -smooth1d(\mraw_misc::probe5_08,1)
+Scope.plot_2_4.xmin: -20
+Scope.plot_2_4.xmax: 80
+Scope.plot_2_4.title: 'Channel 08'//$shot
+Scope.plot_2_4.label: Theta
+Scope.plot_2_4.global_defaults: -130217
+
+Scope.plot_3_4.height: 210
+Scope.plot_3_4.experiment: mst
+Scope.plot_3_4.x: dim_of(\mst_ops::fir_fast_p06)*1000
+Scope.plot_3_4.y: _d=\mst_ops::fir_fast_p06
+Scope.plot_3_4.xmin: -20
+Scope.plot_3_4.xmax: 80
+Scope.plot_3_4.title: 'FIR P06' //$shot
+Scope.plot_3_4.global_defaults: -605313
+Scope.vpane_1: 250
+Scope.vpane_2: 500
+Scope.vpane_3: 750

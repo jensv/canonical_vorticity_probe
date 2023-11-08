@@ -1,0 +1,320 @@
+Scope.geometry: 1768x932+100+120
+Scope.title: "Operations Signals" // $shot
+Scope.icon_name: "OPS"
+Scope.title_event: ops_done
+Scope.print_file: sys$login:dwscope.ps
+Scope.print_event: 
+Scope.print_portrait: 0
+Scope.print_window_title: 0
+Scope.printer: To file
+Scope.font: -Adobe-New Century Schoolbook-Medium-R-Normal--12-120-75-75-P-70-ISO8859-1
+Scope.columns: 4
+Scope.global_1_1.x.grid_lines: 9
+Scope.global_1_1.y.grid_lines: 3
+Scope.global_1_1.experiment: mst
+Scope.global_1_1.shot: current_shot('mst')
+Scope.global_1_1.xmin: -10
+Scope.global_1_1.xmax: 80
+Scope.global_1_1.event: ops_done
+Scope.global_1_1.global_defaults: -143841
+Scope.rows_in_column_1: 8
+
+Scope.plot_1_1.height: 102
+Scope.plot_1_1.experiment: mst
+Scope.plot_1_1.x: dim_of(\mst_ops::theta)*1000
+Scope.plot_1_1.y: \mst_ops::theta
+Scope.plot_1_1.ymin: 0
+Scope.plot_1_1.ymax: 4
+Scope.plot_1_1.event: alpha_pfm_done
+Scope.plot_1_1.title: 'Pinch parameter - Theta'//$shot
+Scope.plot_1_1.label: Theta
+Scope.plot_1_1.global_defaults: -248969
+
+Scope.plot_2_1.height: 106
+Scope.plot_2_1.experiment: mst
+Scope.plot_2_1.x: dim_of(\mst_ops::ip)*1000
+Scope.plot_2_1.y: _ip = \mst_ops::ip
+Scope.plot_2_1.ymin: 0
+Scope.plot_2_1.title: 'Plasma Current (kA)'//$shot//' max='//maxval(_ip)//'kA'
+Scope.plot_2_1.label: Ip
+Scope.plot_2_1.global_defaults: -117897
+
+Scope.plot_3_1.height: 102
+Scope.plot_3_1.experiment: mst
+Scope.plot_3_1.x: dim_of(\mst_ops::ipri)*1000
+Scope.plot_3_1.y: \mst_ops::ipri
+Scope.plot_3_1.title: "Primary current (kA)"//$shot
+Scope.plot_3_1.label: Ipri
+Scope.plot_3_1.global_defaults: -85129
+
+Scope.plot_4_1.height: 106
+Scope.plot_4_1.experiment: mst
+Scope.plot_4_1.x: dim_of(\mst_ops::flux)*1000
+Scope.plot_4_1.y: \mst_ops::flux
+Scope.plot_4_1.title: 'Core flux (Wb)' //$shot
+Scope.plot_4_1.label: Core flux
+Scope.plot_4_1.global_defaults: -68745
+
+Scope.plot_5_1.height: 102
+Scope.plot_5_1.experiment: mst
+Scope.plot_5_1.x: dim_of(\mst_ops::vpg)*1000
+Scope.plot_5_1.y: \mst_ops::vpg
+Scope.plot_5_1.title: 'Poloidal Gap Voltage (V)' //$shot
+Scope.plot_5_1.label: Vpg
+Scope.plot_5_1.global_defaults: -68745
+
+Scope.plot_6_1.height: 106
+Scope.plot_6_1.experiment: mst
+Scope.plot_6_1.x: dim_of(\mst_ops::ima_ciii)*1000
+Scope.plot_6_1.y: \mst_ops::ima_ciii
+Scope.plot_6_1.ymin: 0
+Scope.plot_6_1.ymax: .5
+Scope.plot_6_1.title: 'IMA CIII'//$shot
+Scope.plot_6_1.global_defaults: -642185
+
+Scope.plot_7_1.height: 102
+Scope.plot_7_1.experiment: mst
+Scope.plot_7_1.x: dim_of(\mst_ops::ima_cv)*1000
+Scope.plot_7_1.y: \mst_ops::ima_cv
+Scope.plot_7_1.ymin: 0
+Scope.plot_7_1.title: 'IMA CV' //$shot
+Scope.plot_7_1.global_defaults: -609417
+
+Scope.plot_8_1.height: 132
+Scope.plot_8_1.experiment: mst
+Scope.plot_8_1.x: dim_of(\mst_ops::ima_niv)*1000
+Scope.plot_8_1.y: \mst_ops::ima_niv
+Scope.plot_8_1.ymin: 0
+Scope.plot_8_1.ymax: 1
+Scope.plot_8_1.title: 'IMA NIV' //$shot
+Scope.plot_8_1.global_defaults: -642185
+Scope.rows_in_column_2: 8
+
+Scope.plot_1_2.height: 102
+Scope.plot_1_2.y.grid_lines: 5
+Scope.plot_1_2.experiment: mst
+Scope.plot_1_2.x: dim_of(\mst_ops::f)*1000
+Scope.plot_1_2.y: \mst_ops::f
+Scope.plot_1_2.ymin: -.4
+Scope.plot_1_2.ymax: .1
+Scope.plot_1_2.event: alpha_pfm_done
+Scope.plot_1_2.title: "Reversal parameter - F"//$shot
+Scope.plot_1_2.label: F
+Scope.plot_1_2.global_defaults: -773321
+
+Scope.plot_2_2.height: 106
+Scope.plot_2_2.experiment: mst
+Scope.plot_2_2.x: dim_of(\mst_ops::btw)*1000
+Scope.plot_2_2.y: \mst_ops::btw
+Scope.plot_2_2.title: 'Toroidal field (wall) [G]'//$shot
+Scope.plot_2_2.label: Btw
+Scope.plot_2_2.global_defaults: -68745
+
+Scope.plot_3_2.height: 102
+Scope.plot_3_2.experiment: mst
+Scope.plot_3_2.x: dim_of(\mst_ops::btave)*1000
+Scope.plot_3_2.y: \mst_ops::btave
+Scope.plot_3_2.title: 'Average Toroidal Field (G)' //$shot
+Scope.plot_3_2.label: <Bt>
+Scope.plot_3_2.global_defaults: -68745
+
+Scope.plot_4_2.height: 106
+Scope.plot_4_2.experiment: mst
+Scope.plot_4_2.x: dim_of(\mst_ops::vtot)*1000
+Scope.plot_4_2.y: _vtot=\mst_ops::vtot
+Scope.plot_4_2.title: 'Vtot (V) '//$shot//'  MIN*80 = '//minval(_vtot*0.08)//' kV   '
+Scope.plot_4_2.global_defaults: -593033
+
+Scope.plot_5_2.height: 102
+Scope.plot_5_2.experiment: mst
+Scope.plot_5_2.x: dim_of(\mst_ops::vtg)*1000
+Scope.plot_5_2.y: smooth1d(\mst_ops::vtg,0)
+Scope.plot_5_2.title: 'Toroidal Gap Voltage (V)' //$shot
+Scope.plot_5_2.label: Vtg
+Scope.plot_5_2.global_defaults: -68745
+
+Scope.plot_6_2.height: 106
+Scope.plot_6_2.experiment: mst
+Scope.plot_6_2.x: dim_of(\mst_ops::ima_oiv)*1000
+Scope.plot_6_2.y: \mst_ops::ima_oiv
+Scope.plot_6_2.ymin: 0
+Scope.plot_6_2.ymax: 2
+Scope.plot_6_2.title: 'IMA OIV'//$shot
+Scope.plot_6_2.global_defaults: -642185
+
+Scope.plot_7_2.height: 102
+Scope.plot_7_2.experiment: mst
+Scope.plot_7_2.x: dim_of(\mst_ops::ima_biv)*1000
+Scope.plot_7_2.y: \mst_ops::ima_biv
+Scope.plot_7_2.ymin: 0
+Scope.plot_7_2.ymax: .2
+Scope.plot_7_2.title: 'IMA BIV'//$shot
+Scope.plot_7_2.global_defaults: -642185
+
+Scope.plot_8_2.height: 132
+Scope.plot_8_2.experiment: mst
+Scope.plot_8_2.x: 1000*dim_of(\mraw_ops::sxr_be1_l)
+Scope.plot_8_2.y: _d=-\mraw_ops::sxr_be1_l,_d-mean(_d[-1:0])
+Scope.plot_8_2.xmin: -.01
+Scope.plot_8_2.xmax: .07
+Scope.plot_8_2.event: ops_done
+Scope.plot_8_2.title: 'SXR Be1' //$shot
+Scope.plot_8_2.global_defaults: -724105
+Scope.rows_in_column_3: 8
+
+Scope.plot_1_3.height: 102
+Scope.plot_1_3.experiment: mst
+Scope.plot_1_3.x: dim_of(\mst_fir::fir_fast_p06)
+Scope.plot_1_3.y: _d=\mst_fir::fir_fast_p06
+Scope.plot_1_3.ymin: -0.5
+Scope.plot_1_3.ymax: 1.5
+Scope.plot_1_3.event: n_co2_done
+Scope.plot_1_3.title: 'Density p06 (10^13 cm^-3)'//$shot
+Scope.plot_1_3.label: n_co2
+Scope.plot_1_3.global_defaults: -248969
+
+Scope.plot_2_3.height: 106
+Scope.plot_2_3.experiment: mst
+Scope.plot_2_3.x: dim_of(\mst_ops::press)*1000
+Scope.plot_2_3.y: \mst_ops::press
+Scope.plot_2_3.event: ops_done
+Scope.plot_2_3.title: "H2 Neutral pressure (mTorr)"//$shot
+Scope.plot_2_3.label: Neutral pressure
+Scope.plot_2_3.global_defaults: -724105
+
+Scope.plot_3_3.height: 102
+Scope.plot_3_3.experiment: mst
+Scope.plot_3_3.x: dim_of(\mst_ops::alpha_par)*1000
+Scope.plot_3_3.y: \mst_ops::alpha_par
+Scope.plot_3_3.ymin: 0
+Scope.plot_3_3.ymax: 15
+Scope.plot_3_3.event: alpha_pfm_done
+Scope.plot_3_3.title: 'Alpha parameter' //$shot
+Scope.plot_3_3.label: Alpha_par
+Scope.plot_3_3.global_defaults: -773257
+
+Scope.plot_4_3.height: 106
+Scope.plot_4_3.experiment: mst
+Scope.plot_4_3.x: dim_of(\mst_ops::lam0_par)*1000
+Scope.plot_4_3.y: \mst_ops::lam0_par
+Scope.plot_4_3.ymin: 0
+Scope.plot_4_3.ymax: 5
+Scope.plot_4_3.event: alpha_pfm_done
+Scope.plot_4_3.title: 'Lambda 0 parameter' //$shot
+Scope.plot_4_3.label: Lambda0_par
+Scope.plot_4_3.global_defaults: -773257
+
+Scope.plot_5_3.height: 102
+Scope.plot_5_3.y.grid_lines: 3
+Scope.plot_5_3.experiment: mst
+Scope.plot_5_3.x: dim_of(\mst_mag::bp_n06_vel)*1000
+Scope.plot_5_3.y: smooth1d(\mst_mag::bp_n06_vel,20)
+Scope.plot_5_3.ymin: 0
+Scope.plot_5_3.ymax: 60
+Scope.plot_5_3.event: torarr_done
+Scope.plot_5_3.title: 'Toroidal Rotation (km/s)'//$shot
+Scope.plot_5_3.global_defaults: -773321
+
+Scope.plot_6_3.height: 106
+Scope.plot_6_3.experiment: mst
+Scope.plot_6_3.x: dim_of(\br_m01S_000)*1000
+Scope.plot_6_3.y: \br_m01S_000
+Scope.plot_6_3.event: torarr_done
+Scope.plot_6_3.title: 'vert m=1 Br (sin)' //$shot
+Scope.plot_6_3.global_defaults: -773257
+
+Scope.plot_7_3.height: 102
+Scope.plot_7_3.experiment: mst
+Scope.plot_7_3.x: dim_of(\mst_ops::pohm_alpha)*1000
+Scope.plot_7_3.y: \mst_ops::pohm_alpha
+Scope.plot_7_3.ymin: 0
+Scope.plot_7_3.ymax: 15
+Scope.plot_7_3.event: alpha_pfm_done
+Scope.plot_7_3.title: 'Pohm alpha model (MW)' //$shot
+Scope.plot_7_3.label: Pohm_alpha
+Scope.plot_7_3.global_defaults: -773257
+
+Scope.plot_8_3.height: 132
+Scope.plot_8_3.experiment: mst
+Scope.plot_8_3.x: 1000*dim_of(\mraw_ops::sxr_be2_l)
+Scope.plot_8_3.y: _d=-\mraw_ops::sxr_be2_l,_d-mean(_d[-1:0])
+Scope.plot_8_3.xmin: -.01
+Scope.plot_8_3.xmax: .07
+Scope.plot_8_3.event: ops_done
+Scope.plot_8_3.title: 'SXR Be2' //$shot
+Scope.plot_8_3.global_defaults: -724105
+Scope.rows_in_column_4: 8
+
+Scope.plot_1_4.height: 102
+Scope.plot_1_4.experiment: mst
+Scope.plot_1_4.x: dim_of(\mst_ops::vloop_alpha)*1000
+Scope.plot_1_4.y: \mst_ops::vloop_alpha
+Scope.plot_1_4.ymin: 0
+Scope.plot_1_4.ymax: 50
+Scope.plot_1_4.event: alpha_pfm_done
+Scope.plot_1_4.title: 'Vloop Alpha model (V)' //$shot
+Scope.plot_1_4.label: Vloop_alpha
+Scope.plot_1_4.global_defaults: -248969
+
+Scope.plot_2_4.height: 106
+Scope.plot_2_4.experiment: mst
+Scope.plot_2_4.x: dim_of(\mst_ops::pohm_alpha)*1000
+Scope.plot_2_4.y: \mst_ops::pohm_alpha
+Scope.plot_2_4.ymin: 0
+Scope.plot_2_4.ymax: 15
+Scope.plot_2_4.event: alpha_pfm_done
+Scope.plot_2_4.title: 'Pohm alpha model (MW)' //$shot
+Scope.plot_2_4.label: Pohm_alpha
+Scope.plot_2_4.global_defaults: -773257
+
+Scope.plot_3_4.height: 102
+Scope.plot_3_4.experiment: mst
+Scope.plot_3_4.x: dim_of(\mst_ops::prad_pyro)*1000
+Scope.plot_3_4.y: smooth1d(\mst_ops::prad_pyro,20)
+Scope.plot_3_4.ymin: 0
+Scope.plot_3_4.ymax: 15
+Scope.plot_3_4.title: 'Prad Pyro_129T_105P (MW)' //$shot
+Scope.plot_3_4.global_defaults: -642185
+
+Scope.plot_4_4.height: 106
+Scope.plot_4_4.experiment: mraw_misc
+Scope.plot_4_4.x: 1000*dim_of(\mraw_misc::top.camac.sxr:tr812_1:channel_4)
+Scope.plot_4_4.y: smooth1d(\mraw_misc::top.camac.sxr:tr812_1:channel_4,25)
+Scope.plot_4_4.xmin: -10
+Scope.plot_4_4.xmax: 80
+Scope.plot_4_4.event: n_c02_done
+Scope.plot_4_4.title: "Prad Pyro_345T_15P"//$shot
+Scope.plot_4_4.global_defaults: -199809
+
+Scope.plot_5_4.height: 102
+Scope.plot_5_4.experiment: mst
+Scope.plot_5_4.x: dim_of(\mst_ops::prad_xuv)*1000
+Scope.plot_5_4.y: smooth1d(\mst_ops::prad_xuv,20)
+Scope.plot_5_4.ymin: 0
+Scope.plot_5_4.title: 'Prad XUV_120T_105P (MW)' //$shot
+Scope.plot_5_4.global_defaults: -642185
+
+Scope.plot_6_4.height: 106
+Scope.plot_6_4.x: dim_of(\pgcc_i_26)*1000
+Scope.plot_6_4.y: \pgcc_i_26*100
+Scope.plot_6_4.event: torarr_done
+Scope.plot_6_4.title: "err corr 26"
+Scope.plot_6_4.global_defaults: -199681
+
+Scope.plot_7_4.height: 102
+Scope.plot_7_4.experiment: mst_ops
+Scope.plot_7_4.x: dim_of(\mst_ops::n_co2)*1000
+Scope.plot_7_4.y: \mst_ops::n_co2 / 1e13
+Scope.plot_7_4.xmin: 0
+Scope.plot_7_4.xmax: 5
+Scope.plot_7_4.ymin: 0
+Scope.plot_7_4.ymax: 2
+Scope.plot_7_4.event: n_co2_done
+Scope.plot_7_4.title: 'Density CO2 (10^13 cm^-3)'//$shot
+Scope.plot_7_4.label: n_co2
+Scope.plot_7_4.global_defaults: -261257
+
+Scope.plot_8_4.height: 132
+Scope.vpane_1: 250
+Scope.vpane_2: 500
+Scope.vpane_3: 750
