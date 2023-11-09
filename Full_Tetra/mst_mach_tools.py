@@ -237,8 +237,8 @@ def merge_shots(time, time2, isat, isat2,
 def mach_results(shot=1210818030, nsmooth=None, res='mach',
     delphi=-60.0, tmin=-0.001, tmax=0.07, comp='dave',
     vtype='octahedron', imin=5E-4, k=1.1, second_shot=None,
-    tetra_missing_tip=None, rj_set=[20, 20, 20, 20, 2],
-    rj_set2 = [5, 20, 20, 20, 2],
+    tetra_missing_tip=None, rj_set=[20, 20, 20, 20, 2], rj_set2 = [5, 20, 20, 20, 2], 
+    tip_num_name = ['4', '1', '3', '2', '5'], tip_num_name2 = ['3', '2', '4', '1', '5'], 
     mds_start='probe3_', merge_method='first'):
     """Return result depending on res keyword .startswith:
         'isat', tip measurements;
@@ -260,8 +260,8 @@ def mach_results(shot=1210818030, nsmooth=None, res='mach',
     if vtype.startswith('tetra'):
         tip_abc_name = ['a', 'b', 'c', 'd', 'ret']
         #second_tip_abc_name = ['b', 'a', 'd', 'c', 'ret']
-        tip_num_name = ['4', '1', '3', '2', '5']
-        tip_num_name2 = ['3', '2', '4', '1', '5']
+        tip_num_name = tip_num_name
+        tip_num_name2 = tip_num_name2
     rj = dict(zip(tip_abc_name,
          rj_set))
     rj2 = dict(zip(tip_abc_name,
@@ -271,12 +271,21 @@ def mach_results(shot=1210818030, nsmooth=None, res='mach',
     tip_mds_name2 = [mds_start + str(n).zfill(2) for n in \
         tip_num_name2]
     mst_name = ['theta', 'phi', 'r']  # ['x', 'y', 'z'] in Cartesian
+    
+    print("rj", rj)
+    print("tip_mds_name", tip_mds_name)
+    
     for i in range(len(tip_abc_name)):
         abc = tip_abc_name[i]
         time[abc], isat[abc] = get_data(tip_mds_name[i], shot,
             comp=comp, tmin=tmin, tmax=tmax)
         #
         # if second_shot assume it is with probe rotated by 180 degrees
+        
+        #print("rj_abc", rj[abc])
+        #print("rj2_abc", rj2[abc])
+        #print("abc", abc)
+        
         if second_shot:
             time2[abc], isat2[abc] = get_data(tip_mds_name2[i], second_shot,
                                               comp=comp, tmin=tmin, tmax=tmax)
@@ -291,6 +300,14 @@ def mach_results(shot=1210818030, nsmooth=None, res='mach',
         isat[abc] /= rj[abc]
         isat[abc] = np.maximum(isat[abc], imin)
 
+    #print("isat", isat)
+    #print("isat2", isat2)
+    #print("tetra_missing_tip", tetra_missing_tip)
+    #print("tip_num_name", tip_num_name.index(str(tetra_missing_tip)))
+    #print("tip_num_name2", tip_num_name2.index(str(tetra_missing_tip)))
+    #print("tip_abc_name", tip_abc_name[tip_num_name.index(str(tetra_missing_tip))])
+    #print("tip_abc_name2", tip_abc_name[tip_num_name2.index(str(tetra_missing_tip))])
+    
     if second_shot:
         time, isat = merge_shots(time, time2, isat, isat2,
                                  tip_abc_name[tip_num_name.index(str(tetra_missing_tip))],
@@ -355,6 +372,7 @@ def plot_mach_results(shot=1220927065, second_shot=1220927077, nsmooth=51,
                       vtype='tetra', imin=5E-4, k=1.1, plot_sum=True,
                       tetra_missing_tip=4, mds_start='probe5_',
                       rj_set=[20, 20, 20, 20, 5], rj_set2=[20, 20, 20, 5, 5],
+                      tip_num_name = ['4', '1', '3', '2', '5'], tip_num_name2 = ['3', '2', '4', '1', '5'],
                       merge_method='first', ylim=None):
     """Plot result depending on res keyword .startswith:
         'isat', tip measurements;
