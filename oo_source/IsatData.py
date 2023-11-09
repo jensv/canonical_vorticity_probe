@@ -1,14 +1,16 @@
 import os
 import pandas as pd
 import xarray as xr
+import MDSplus as mds
+import numpy as np
 
-class IsatData():
+class IsatData(object):
     def __init__(self, shot_settings_path, check=False):
         r"""
         Initialize, read and store shotlog.
         """
         if check and os.path.isFile(shot_settings_path):
-            raise FileNotFoundError(shote_settings_path)
+            raise FileNotFoundError(shot_settings_path)
         self.shot_settings_path = shotlog_path
         compressed_shot_settings = pd.read_excel(shot_file, skiprows=2, header=0)
         self.shot_settings = expand_shot_settings(compressed_shot_settings)
@@ -37,11 +39,16 @@ class IsatData():
         shot_settings = pd.DataFrame(shot_settings)
         
         
-    def isats(self, shot):
+    def load_isats(self, shot):
+        
+        tetra_probe = xr.DataArray(np.zeros((,,)), 
+                              coords=[Y,X,Attempts], 
+                              dims=[,,], 
+                              name = r'')
         
         
         
-    def read_mdsp(shot, server):
+    def read_mds(shot, server):
         r"""
         
         """
