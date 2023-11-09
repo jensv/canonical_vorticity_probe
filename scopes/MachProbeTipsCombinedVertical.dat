@@ -1,0 +1,224 @@
+Scope.geometry: 1081x1183+2559+734
+Scope.title: "Mach Probe Tips" // $shot
+Scope.icon_name: "Magnetic"
+Scope.title_event: 
+Scope.print_file: sys$login:dwscope.ps
+Scope.print_event: 
+Scope.print_portrait: 0
+Scope.print_window_title: 0
+Scope.printer: TermRoom4200
+Scope.font: -Adobe-New Century Schoolbook-Medium-R-Normal--12-120-75-75-P-70-ISO8859-1
+Scope.columns: 4
+Scope.global_1_1.x.grid_lines: 10
+Scope.global_1_1.y.grid_lines: 8
+Scope.global_1_1.experiment: mst
+Scope.global_1_1.shot: current_shot('mst')
+Scope.global_1_1.y: _spts=21
+Scope.global_1_1.xmin: -20
+Scope.global_1_1.xmax: 120.0
+Scope.global_1_1.ymin: -0.08
+Scope.global_1_1.ymax: 0.08
+Scope.global_1_1.global_defaults: -195047
+Scope.rows_in_column_1: 5
+
+Scope.plot_3_1.height: 223
+Scope.plot_3_1.y.grid_lines: 5
+Scope.plot_3_1.experiment: mst
+Scope.plot_3_1.x: dim_of(\mraw_misc::probe1_01)*1000
+Scope.plot_3_1.y: _d=smooth1d(data(\mraw_misc::probe1_01),50),_d - mean(_d[0:100])
+Scope.plot_3_1.title: 'Tip 13 (1OI)'//$shot
+Scope.plot_3_1.label: Theta
+Scope.plot_3_1.global_defaults: -117961
+
+Scope.plot_3_2.height: 223
+Scope.plot_3_2.y.grid_lines: 6
+Scope.plot_3_2.experiment: mst
+Scope.plot_3_2.x: dim_of(\mraw_misc::probe1_05)*1000
+Scope.plot_3_2.y: _d=smooth1d(\mraw_misc::probe1_05,50),_d-mean(_d[1:100])
+Scope.plot_3_2.title: 'Tip 23 (2OI)'//$shot
+Scope.plot_3_2.label: Theta
+Scope.plot_3_2.global_defaults: -117961
+
+Scope.plot_3_3.height: 223
+Scope.plot_3_3.y.grid_lines: 6
+Scope.plot_3_3.experiment: mst
+Scope.plot_3_3.x: dim_of(\mraw_misc::probe2_01)*1000
+Scope.plot_3_3.y: smooth1d(\mraw_misc::probe2_01,50)
+Scope.plot_3_3.ymin: -1
+Scope.plot_3_3.ymax: 5
+Scope.plot_3_3.title: 'Tip 33 (3OI)'//$shot
+Scope.plot_3_3.label: Theta
+Scope.plot_3_3.global_defaults: -117961
+
+Scope.plot_3_4.height: 223
+Scope.plot_3_4.experiment: mst
+Scope.plot_3_4.x: dim_of(\mraw_misc::probe2_05)*1000
+Scope.plot_3_4.y: smooth1d(\mraw_misc::probe2_05,50)
+Scope.plot_3_4.ymin: -0.2
+Scope.plot_3_4.ymax: 1
+Scope.plot_3_4.title: 'Tip 43 (4OI)'//$shot
+Scope.plot_3_4.label: Theta
+Scope.plot_3_4.global_defaults: -117897
+
+Scope.plot_5_1.height: 223
+Scope.plot_5_1.y.grid_lines: 6
+Scope.plot_5_1.x: dim_of(\mst_ops::ip)*1000
+Scope.plot_5_1.y: _ip = \mst_ops::ip
+Scope.plot_5_1.xmin: -10
+Scope.plot_5_1.xmax: 60
+Scope.plot_5_1.ymin: -100
+Scope.plot_5_1.ymax: 200
+Scope.plot_5_1.title: 'Plasma Current Ip (kA)' // $shot
+Scope.plot_5_1.global_defaults: -130115
+Scope.rows_in_column_2: 5
+
+Scope.plot_1_1.height: 223
+Scope.plot_1_1.experiment: mst
+Scope.plot_1_1.x: dim_of(\mraw_misc::probe1_02)*1000
+Scope.plot_1_1.y: _d=smooth1d(data(\mraw_misc::probe1_02),50),_d
+Scope.plot_1_1.ymin: -1
+Scope.plot_1_1.ymax: 1
+Scope.plot_1_1.title: 'Tip 11 (1OO)'//$shot
+Scope.plot_1_1.label: Theta
+Scope.plot_1_1.global_defaults: -117961
+
+Scope.plot_1_2.height: 223
+Scope.plot_1_2.y.grid_lines: 6
+Scope.plot_1_2.experiment: mst
+Scope.plot_1_2.x: dim_of(\mraw_misc::probe1_06)*1000
+Scope.plot_1_2.y: smooth1d(\mraw_misc::probe1_06,15)
+Scope.plot_1_2.title: 'Tip 21 (2OO)'//$shot
+Scope.plot_1_2.label: Theta
+Scope.plot_1_2.global_defaults: -117961
+
+Scope.plot_1_3.height: 223
+Scope.plot_1_3.experiment: mst
+Scope.plot_1_3.x: dim_of(\mraw_misc::probe2_02)*1000
+Scope.plot_1_3.y: smooth1d(\mraw_misc::probe2_02,50)
+Scope.plot_1_3.title: 'Tip 31 (3OO)'//$shot
+Scope.plot_1_3.label: Theta
+Scope.plot_1_3.global_defaults: -117897
+
+Scope.plot_1_4.height: 223
+Scope.plot_1_4.experiment: mst
+Scope.plot_1_4.x: dim_of(\mraw_misc::probe2_06)*1000
+Scope.plot_1_4.y: smooth1d(\mraw_misc::probe2_06,50)
+Scope.plot_1_4.ymin: -0.2
+Scope.plot_1_4.ymax: 1
+Scope.plot_1_4.title: 'Tip 41 (4OO)'//$shot
+Scope.plot_1_4.label: Theta
+Scope.plot_1_4.global_defaults: -117897
+
+Scope.plot_5_2.height: 223
+Scope.plot_5_2.y.grid_lines: 8
+Scope.plot_5_2.experiment: mst
+Scope.plot_5_2.x: dim_of(\mst_ops::btave)*1000
+Scope.plot_5_2.y: \mst_ops::btave
+Scope.plot_5_2.ymin: -200
+Scope.plot_5_2.ymax: 500
+Scope.plot_5_2.title: 'Average Toroidal Field (G)' //$shot
+Scope.plot_5_2.label: <Bt>
+Scope.plot_5_2.global_defaults: -117961
+Scope.rows_in_column_3: 5
+
+Scope.plot_2_1.height: 223
+Scope.plot_2_1.y.grid_lines: 5
+Scope.plot_2_1.experiment: mst
+Scope.plot_2_1.x: dim_of(\mraw_misc::probe1_03)*1000
+Scope.plot_2_1.y: _d=smooth1d(data(\mraw_misc::probe1_03),50),_d - mean(_d[0:100] )
+Scope.plot_2_1.title: 'Tip 12 (1BTd)'//$shot
+Scope.plot_2_1.label: Theta
+Scope.plot_2_1.global_defaults: -117961
+
+Scope.plot_4_2.height: 223
+Scope.plot_4_2.y.grid_lines: 6
+Scope.plot_4_2.experiment: mst
+Scope.plot_4_2.x: dim_of(\mraw_misc::probe1_07)*1000
+Scope.plot_4_2.y: _d=smooth1d(\mraw_misc::probe1_07,50)
+Scope.plot_4_2.title: 'Tip 24 (2BPd)'//$shot
+Scope.plot_4_2.label: Theta
+Scope.plot_4_2.global_defaults: -117961
+
+Scope.plot_4_3.height: 223
+Scope.plot_4_3.experiment: mst
+Scope.plot_4_3.x: dim_of(\mraw_misc::probe2_03)*1000
+Scope.plot_4_3.y: smooth1d(\mraw_misc::probe2_03,50)
+Scope.plot_4_3.title: 'Tip 34 (3BTd)'//$shot
+Scope.plot_4_3.label: Theta
+Scope.plot_4_3.global_defaults: -117897
+
+Scope.plot_2_4.height: 223
+Scope.plot_2_4.experiment: mst
+Scope.plot_2_4.x: dim_of(\mraw_misc::probe2_07)*1000
+Scope.plot_2_4.y: _d=smooth1d(\mraw_misc::probe2_07,50),_d-mean(_d[1:100])
+Scope.plot_2_4.ymin: -0.3
+Scope.plot_2_4.ymax: 00.5
+Scope.plot_2_4.title: 'Tip 42 (4BPd)'//$shot
+Scope.plot_2_4.label: Theta
+Scope.plot_2_4.global_defaults: -117897
+
+Scope.plot_5_3.height: 223
+Scope.plot_5_3.y.grid_lines: 6
+Scope.plot_5_3.experiment: mst
+Scope.plot_5_3.x: dim_of(\mst_ops::vtg)*1000
+Scope.plot_5_3.y: \mst_ops::vtg
+Scope.plot_5_3.ymin: -10
+Scope.plot_5_3.ymax: 50
+Scope.plot_5_3.event: alpha_pfm_done
+Scope.plot_5_3.title: "Vtg - F"//$shot
+Scope.plot_5_3.label: F
+Scope.plot_5_3.global_defaults: -773321
+Scope.rows_in_column_4: 5
+
+Scope.plot_4_1.height: 223
+Scope.plot_4_1.y.grid_lines: 5
+Scope.plot_4_1.experiment: mst
+Scope.plot_4_1.x: dim_of(\mraw_misc::probe1_04)*1000
+Scope.plot_4_1.y: _d=smooth1d(data(\mraw_misc::probe1_04),50), _d - mean( _d[0:100])
+Scope.plot_4_1.title: 'Tip 14 (1BTu)'//$shot
+Scope.plot_4_1.label: Theta
+Scope.plot_4_1.global_defaults: -117961
+
+Scope.plot_2_2.height: 223
+Scope.plot_2_2.experiment: mst
+Scope.plot_2_2.x: dim_of(\mraw_misc::probe1_08)*1000
+Scope.plot_2_2.y: smooth1d(\mraw_misc::probe1_08,50)
+Scope.plot_2_2.ymin: -5
+Scope.plot_2_2.ymax: 5
+Scope.plot_2_2.title: 'Tip 22 (2BPu)'//$shot
+Scope.plot_2_2.label: Theta
+Scope.plot_2_2.global_defaults: -117961
+
+Scope.plot_2_3.height: 223
+Scope.plot_2_3.experiment: mst
+Scope.plot_2_3.x: dim_of(\mraw_misc::probe2_04)*1000
+Scope.plot_2_3.y: smooth1d(\mraw_misc::probe2_04,50)
+Scope.plot_2_3.title: 'Tip 32 (3BTu)'//$shot
+Scope.plot_2_3.label: Theta
+Scope.plot_2_3.global_defaults: -117897
+
+Scope.plot_4_4.height: 223
+Scope.plot_4_4.y.grid_lines: 2
+Scope.plot_4_4.experiment: mst
+Scope.plot_4_4.x: dim_of(\mraw_misc::probe2_08)*1000
+Scope.plot_4_4.y: smooth1d(\mraw_misc::probe2_08,50)
+Scope.plot_4_4.ymin: -1
+Scope.plot_4_4.ymax: 1
+Scope.plot_4_4.title: 'Tip 44 (4BPu)'//$shot
+Scope.plot_4_4.label: Theta
+Scope.plot_4_4.global_defaults: -117961
+
+Scope.plot_5_4.height: 223
+Scope.plot_5_4.y.grid_lines: 6
+Scope.plot_5_4.experiment: mst
+Scope.plot_5_4.x: dim_of(\mraw_misc::probe2_14)*1000
+Scope.plot_5_4.y: smooth1d(\mraw_misc::probe2_14,50)
+Scope.plot_5_4.ymin: -.5
+Scope.plot_5_4.ymax: .1
+Scope.plot_5_4.event: alpha_pfm_done
+Scope.plot_5_4.title: "Total Return Current"//$shot
+Scope.plot_5_4.label: F
+Scope.plot_5_4.global_defaults: -773321
+Scope.vpane_1: 250
+Scope.vpane_2: 500
+Scope.vpane_3: 750
